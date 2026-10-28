@@ -4,10 +4,10 @@
   разделенными запятыми.
 */
 export function arraySorting(data) {
-	if (!str) {
+	if (!data) {
         return "";
     }
-    let strArray = str.split(',');
+    let strArray = data.split(',');
     let numArray = [];
     for (let i = 0; i < strArray.length; i++) {
         numArray.push(Number(strArray[i]));
@@ -24,7 +24,7 @@ export function arraySorting(data) {
   были бы удалены из массива, и верните его в качестве результата функции.
 */
 export function arrayFiltering(data) {
-	let filteredResult = arr.filter(function(num) {
+	let filteredResult = data.filter(function(num) {
         if (num <= 100) {
             return true;
         } else {
